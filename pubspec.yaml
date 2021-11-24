@@ -1,6 +1,7 @@
 name: u_navi_bar
-description: A new flutter plugin project.
+description: This plugin is a simple and beautiful Material You styled Navigation Bar.
 version: 0.0.1
+repository: https://github.com/TamilKannanCV-personal/u_navi_bar.git
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
