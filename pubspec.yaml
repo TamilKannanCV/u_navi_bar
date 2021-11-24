@@ -1,0 +1,35 @@
+name: u_navi_bar
+description: A new flutter plugin project.
+version: 0.0.1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  google_fonts: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.u_navi_bar
+        pluginClass: UNaviBarPlugin
+      ios:
+        pluginClass: UNaviBarPlugin
+      windows:
+        pluginClass: UNaviBarPlugin
+      web:
+        pluginClass: UNaviBarWeb
+        fileName: u_navi_bar_web.dart
+
