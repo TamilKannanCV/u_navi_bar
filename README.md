@@ -10,8 +10,8 @@ This plugin is a simple and beautiful **Material You** styled **Navigation Bar**
 
 | ThemeMode | Preview |
 | - | - |
-| *Light Mode* | [<img src="screenshots/light.jpg" width="300"/>](screenshots/light.jpg) |
-| *Dark Mode*  | [<img src="screenshots/dark.jpg" width="300"/>](screenshots/dark.jpg)   |
+| *Light Mode* | ![Light](screenshots/light.jpg) |
+| *Dark Mode*  | ![Dark](screenshots/dark.jpg)   |
 
 ---
 
