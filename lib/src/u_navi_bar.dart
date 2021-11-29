@@ -16,27 +16,19 @@ class UNaviBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     assert(items.length >= 2, "Atleast 2 UNaviBarItem needed");
-    final ValueNotifier<int> indexVn = ValueNotifier(selectedIndex);
-    return ValueListenableBuilder(
-        valueListenable: indexVn,
-        builder: (context, int i, _) {
-          return BottomNavigationBar(
-            backgroundColor: ColorUtils(context).kBarBg,
-            currentIndex: i,
-            selectedItemColor: ColorUtils(context).kIconSelected,
-            unselectedItemColor: ColorUtils(context).kIconUnSelected,
-            elevation: 0.0,
-            selectedFontSize: 13.0,
-            unselectedFontSize: 13.0,
-            onTap: (j) {
-              indexVn.value = j;
-              onTap?.call(j);
-            },
-            selectedLabelStyle: GoogleFonts.roboto(fontWeight: FontWeight.w500),
-            unselectedLabelStyle:
-                GoogleFonts.roboto(fontWeight: FontWeight.w500),
-            items: items,
-          );
-        });
+
+    return BottomNavigationBar(
+      backgroundColor: ColorUtils(context).kBarBg,
+      currentIndex: selectedIndex,
+      selectedItemColor: ColorUtils(context).kIconSelected,
+      unselectedItemColor: ColorUtils(context).kIconUnSelected,
+      elevation: 0.0,
+      selectedFontSize: 13.0,
+      unselectedFontSize: 13.0,
+      onTap: (j) => onTap?.call(j),
+      selectedLabelStyle: GoogleFonts.roboto(fontWeight: FontWeight.w500),
+      unselectedLabelStyle: GoogleFonts.roboto(fontWeight: FontWeight.w500),
+      items: items,
+    );
   }
 }
